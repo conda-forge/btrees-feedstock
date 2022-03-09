@@ -1,5 +1,5 @@
 {% set name = "btrees" %}
-{% set version = "4.9.2" %}
+{% set version = "4.10.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/BTrees-{{ version }}.tar.gz
-  sha256: d33323655924192c4ac998d9ee3002e787915d19c1e17a6baf47c9a63d9556e3
+  sha256: d6ab0e3410d074d7154245d6dc6493ae86f1b50bd6080d1310ebb3ecdea5deb6
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,10 +20,10 @@ requirements:
   host:
     - persistent
     - pip
-    - python 
+    - python
   run:
     - persistent >=4.1.0
-    - python 
+    - python
     - zope.interface >=5.0.0
 
 test:
