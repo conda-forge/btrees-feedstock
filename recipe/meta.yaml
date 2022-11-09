@@ -1,5 +1,5 @@
 {% set name = "btrees" %}
-{% set version = "4.11.0" %}
+{% set version = "4.11.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/BTrees-{{ version }}.tar.gz
-  sha256: 005c03b48029d67a288e7608798c37ac249f2c069b6f5183640a9499dcd8faa3
+  sha256: 6f7d8a76a42b47c3d29d903d90fa48489f8a125e6fbebd24911353a92c1b2cf1
 
 build:
   number: 0
