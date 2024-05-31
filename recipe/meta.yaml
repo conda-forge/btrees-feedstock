@@ -1,5 +1,5 @@
 {% set name = "btrees" %}
-{% set version = "5.0" %}
+{% set version = "6.0" %}
 
 
 package:
@@ -8,15 +8,16 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/BTrees-{{ version }}.tar.gz
-  sha256: fddf8a4dcc0253e39027bab380a2e20d47ae370a32485416f2a66ad9ae1a43fa
+  sha256: f69b8cdd33434e13e180216bb82ae0b7cd31fadfb7cc559695cb37319ca35ff0
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - persistent
     - pip
