@@ -34,6 +34,13 @@ tests:
         - BTrees
         - BTrees.tests
       pip_check: true
+  - requirements:
+      run:
+        - persistent >=4.4.3
+        - transaction
+        - zodb
+    script:
+      - python -m unittest discover -b -v BTrees.tests
 
 about:
   summary: Scalable persistent object containers
